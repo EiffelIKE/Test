@@ -19,8 +19,7 @@ module.exports = {
   ],
   'rules': {
     'linebreak-style': ["error", "windows"],
-    'semi': ["error", "never"],
-    "indent": ["error", 2],
+    'semi': ["error", "never"],    
     "comma-dangle": ["error", "never"],
     
     "react/prop-types": 0

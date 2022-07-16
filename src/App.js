@@ -8,7 +8,7 @@ const App = () => {
     first_name: 'Jeremy',
     last_name: 'Davis',
     status: 'At workasdasdadsd ',
-    available: false
+    available: true
   }
   return (
     <div >
