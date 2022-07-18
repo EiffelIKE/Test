@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles/Card.css'
-
 import friendimg from './styles/img.png'
 const Card = ({data}) => {
   const handleClick = ()=>{
@@ -9,23 +8,23 @@ const Card = ({data}) => {
   const fullName = data.first_name + ' ' + data.last_name
   return (
     <div className='card'>
-      <div className='card-container'>
-        <a className='available'/>
-        <div className='img-container'>
-          <div className='img'
-            style={{background: `url(${friendimg})`}}/>
+      <div className='card-body row'>
+        <div className='col-2'>
+          <div className='available'
+            style={{background: '#16BA44', border: '2px solid #FFFFFF'}}/>
+          <img src={friendimg} alt='Friend Picture'/>
         </div>
-        <div className = "info">
-          <h1>{fullName}</h1>
+
+        <div className='col-7'>
+          <h1 className='card-title'>{fullName}</h1>
           <div className='status-container'>
-            <div className='status'> {data.status}</div>
+            <p className='card-text'>{data.status}</p>
           </div>
         </div>
-        <div className='button-container' onClick={handleClick}>
-          <button className='button'>
-            <div className='button-text'>
-               Details
-            </div>
+
+        <div className='col-2 mx-auto Details-Button'>
+          <button className='btn btn-primary Button' onClick={handleClick}>
+            Details
           </button>
         </div>
       </div>
