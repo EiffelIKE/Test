@@ -1,52 +1,47 @@
 .card{
-    font-family: 'Inter';
-    font-style: normal;
-    position: relative;
-    width: 650px;
-    height: 95px;    
-    border-radius: 4px;
+background: #FFFFFF;
+box-shadow: 0px 0.77vw 1.54vw rgba(204, 208, 223, 0.5);
+border-radius: 0.625vw;
+width: 49.82vw;
+height: 7vw;    
 }
 .available{    
     position: absolute;
-    width: 13px;
-    height: 13px;
-    left: 10px;
-    top: 12px;
-    z-index: 100;
-    
-    border-radius: 10px;
+    width: 0.9vw;
+    height: 0.9vw;
+    left: 0.77vw;
+    top: 0.89vw;
+    z-index: 100;    
+    border-radius: 0.77vw;
 }
 .card-title{    
-    padding-top: 5px; 
+    padding-top: 0.37vw; 
     position: absolute;        
-    left: 88px;
-    top: calc(45% - 52px/2);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    left: 6.6vw;
+    top: calc(45% - 4.5vw/2);    
+    font-size: 1.25vw;
+    line-height: 1.87vw;
 }
-.card-text{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 24px;
+.card-text{    
+    font-size: 0.94vw;
+    line-height: 1.8vw;
     color: #B1B9DB;
 }
 .status-container {
     position: absolute;
-    left: 88px;
-    top: calc(75% - 39px/2);
-    padding: 0px 8px;
+    left: 6.6vw;
+    top: calc(75% - 3.4vw/2);
+    padding: 0px 0.5vw;
     width: fit-content;
-    height: 24px;
-    border: 1px solid #B1B9DB;
-    border-radius: 20px;
+    height: 1.8vw;
+    border: 0.078vw solid #B1B9DB;
+    border-radius: 1.56vw;
 }
 .Details-Button{
-    padding: 10px;
+    padding: 0.77vw;
 }
-.Button{
-    left: 5px;
-    width: 95px;
-    height: 40px;
+.Button{    
+    width: 7.5vw;
+    height: 2.9vw;
     background: #2E57FA;
 }

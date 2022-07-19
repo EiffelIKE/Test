@@ -1,11 +1,12 @@
+/* eslint-disable camelcase */
 import React from 'react'
 import './styles/Card.css'
 import friendimg from './styles/img.png'
-const Card = ({data}) => {
+const Card = ({img, first_name, last_name, status, available}) => {
   const handleClick = ()=>{
     console.log('Boton clicked')
   }
-  const fullName = data.first_name + ' ' + data.last_name
+  const fullName = first_name + ' ' + last_name
   return (
     <div className='card'>
       <div className='card-body row'>
@@ -18,7 +19,7 @@ const Card = ({data}) => {
         <div className='col-7'>
           <h1 className='card-title'>{fullName}</h1>
           <div className='status-container'>
-            <p className='card-text'>{data.status}</p>
+            <p className='card-text'>{status}</p>
           </div>
         </div>
 
