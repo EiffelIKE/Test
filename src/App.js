@@ -1,10 +1,10 @@
 import React from 'react'
+import FriendsListContainer from './pages/FriendsListContainer'
 
-import FriendList from './components/FriendList'
 const App = () => {
   return (
     <div >
-      <FriendList />
+      <FriendsListContainer/>
     </div>
   )
 }
