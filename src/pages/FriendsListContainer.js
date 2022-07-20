@@ -1,23 +1,18 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import url from '../Config'
 import FriendsList from '../components/FriendsList'
+import useFetchAPI from '../hooks/useFetchAPI'
+import Loading from '../components/Loading'
 
 const FriendsListContainer = ( ) =>{
-  const [data, setData] = useState([])
-  useEffect( () => {
-    const fetchFriends = async () =>{
-      const res = await fetch(`${url}`)
-      const data = await res.json()
-      setData(data)
-    }
-    fetchFriends()
-  }, [])
-  console.log(data)
-  return (
-    <>
-      <FriendsList friend={data}/>
-    </>
-  )
+  const {data, loading, error} = useFetchAPI(`${url}`)
+
+  if (loading) return <Loading/>
+
+  if (error) alert('Error')
+
+  return <FriendsList friend={data}/>
 }
+
 export default FriendsListContainer
 
