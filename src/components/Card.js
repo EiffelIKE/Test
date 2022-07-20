@@ -2,10 +2,9 @@
 import React from 'react'
 import './styles/Card.css'
 import friendimg from './styles/img.png'
-const Card = ({img, first_name, last_name, status, available}) => {
-  const handleClick = ()=>{
-    console.log('Boton clicked')
-  }
+
+
+const Card = ({img, first_name, last_name, status, available, handleClick}) => {
   const fullName = first_name + ' ' + last_name
   return (
     <div className='card'>

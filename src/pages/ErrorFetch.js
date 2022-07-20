@@ -11,8 +11,8 @@ const ErrorFetch = () => {
         <p className='display-5'>
           Unexpected Error
         </p>
-        <button type="button"
-          className="btn btn-outline-secondary back">Get Back</button>
+        <button type="button" onClick={ () => window.location.reload() }
+          className="btn btn-outline-secondary back">Retry</button>
       </div>
     </div>
   )
