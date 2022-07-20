@@ -3,7 +3,9 @@ background: #FFFFFF;
 box-shadow: 0px 0.77vw 1.54vw rgba(204, 208, 223, 0.5);
 border-radius: 0.625vw;
 width: 49.82vw;
-height: 7vw;    
+height: 7vw;
+font-family: "Inter";
+font-style: normal;      
 }
 .available{    
     position: absolute;

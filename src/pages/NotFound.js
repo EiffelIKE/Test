@@ -1,21 +1,20 @@
 import React from 'react'
-import '../components/styles/Errors.css'
 
-const ErrorFetch = () => {
+const NotFound = () => {
   return (
     <div className='errorfetch'>
       <div className='text-center'>
         <p className='display-2'>
-          Error: 500
+          Error: 404
         </p>
         <p className='display-5'>
-          Unexpected Error
+          Page Not Found
         </p>
         <button type="button"
-          className="btn btn-outline-secondary back">Get Back</button>
+          className="btn btn-outline-secondary back">Get Home</button>
       </div>
     </div>
   )
 }
 
-export default ErrorFetch
+export default NotFound
