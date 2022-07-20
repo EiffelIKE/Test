@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import React from 'react'
 import './styles/Card.css'
-import friendimg from './styles/img.png'
+// import friendimg from './styles/img.png'
 const Card = ({img, first_name, last_name, status, available}) => {
   const handleClick = ()=>{
     console.log('Boton clicked')
@@ -13,7 +13,7 @@ const Card = ({img, first_name, last_name, status, available}) => {
         <div className='col-2'>
           <div className='available'
             style={{background: '#16BA44', border: '2px solid #FFFFFF'}}/>
-          <img src={friendimg} alt='Friend Picture'/>
+          <img src={`${img}`} alt='Friend Picture'/>
         </div>
 
         <div className='col-7'>
