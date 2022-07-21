@@ -5,7 +5,12 @@ import './styles/Friend.css'
 
 const Friends = ({friend}) => {
   const navigate = useNavigate()
-  const handleClick = () => navigate('./Details')
+  const handleClick = (e) =>{
+    const friendId = e.target.dataset.id
+    console.log(friendId)
+    e.preventDefault()
+    navigate('./Details')
+  }
 
   return (
     <div className='Friends-List'>
@@ -17,6 +22,7 @@ const Friends = ({friend}) => {
             fullName = {friend.first_name + ' ' + friend.last_name}
             {...friend}
             handleClick={handleClick}
+            id ={friend.id}
           />)
       }
       )}
