@@ -13,6 +13,8 @@ const Friends = ({friend}) => {
         return (
           <Card
             key={friend.id}
+            img = {friend.img}
+            fullName = {friend.first_name + ' ' + friend.last_name}
             {...friend}
             handleClick={handleClick}
           />)

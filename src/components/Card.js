@@ -1,18 +1,20 @@
-/* eslint-disable camelcase */
 import React from 'react'
 import './styles/Card.css'
 import friendimg from './styles/img.png'
 
-
-const Card = ({img, first_name, last_name, status, available, handleClick}) => {
-  const fullName = first_name + ' ' + last_name
+const Card = ({img, fullName, status, available, handleClick}) => {
+  const styleAvailable = {
+    case1: {background: '#16BA44', border: '2px solid #FFFFFF'},
+    case0: {background: '#B1B9DB', border: '2px solid #F4F6FE'}
+  }
+  console.log(available)
   return (
     <div className='card'>
       <div className='card-body row'>
         <div className='col-2'>
           <div className='available'
-            style={{background: '#16BA44', border: '2px solid #FFFFFF'}}/>
-          <img src={friendimg} alt='Friend Picture'/>
+            style={ available ? styleAvailable.case1 : styleAvailable.case0 }/>
+          <img src={friendimg } alt='Friend Picture'/>
         </div>
 
         <div className='col-7'>

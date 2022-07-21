@@ -11,16 +11,16 @@
   align-items: flex-start;    
 }
 .Friends-Container::-webkit-scrollbar{
-  width: 5px;
-  height: 552px;
+  width: 0.3125rem;
+  height: 34.5rem;
 }
 .Friends-Container::-webkit-scrollbar-track{
-  background: #e8eaf5;
-  border-radius: 8px;
+  background: #dcdce9c1;
+  border-radius: 0.5rem;
 }
 .Friends-Container::-webkit-scrollbar-thumb{
-  width: 5px;
+  width: 0.3125rem;
   position: absolute;
   background: #b1b9db;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
