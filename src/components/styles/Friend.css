@@ -1,6 +1,6 @@
-.Friends-List{    
-    padding: 1.25rem 2.5rem 2.5rem;    
-    padding-bottom: 2.7vw;
+.Friends-List{ 
+    margin:auto;       
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;

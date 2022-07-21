@@ -1,0 +1,26 @@
+.Friends-Container{
+  margin: 12.2rem 22.69rem; 
+  display: flex;
+  overflow-y: scroll;
+  padding-top: 0.94rem;
+  flex-direction: column;   
+  position: absolute;
+  width: 44.625rem;
+  height: 39.625rem;  
+  background: rgba(255, 255, 255, 0.5);
+  align-items: flex-start;    
+}
+.Friends-Container::-webkit-scrollbar{
+  width: 0.3125rem;
+  height: 34.5rem;
+}
+.Friends-Container::-webkit-scrollbar-track{
+  background: #dcdce9c1;
+  border-radius: 0.5rem;
+}
+.Friends-Container::-webkit-scrollbar-thumb{
+  width: 0.3125rem;
+  position: absolute;
+  background: #b1b9db;
+  border-radius: 0.5rem;
+}

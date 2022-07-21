@@ -1,0 +1,7 @@
+.page{
+    display: grid;
+    position: relative;
+    width: 90rem;
+    height: 60rem;
+    background:#f4f6fe;
+}
