@@ -19,7 +19,8 @@ const Card = ({img, fullName, status, available, handleClick, id}) => {
         <div className='col-7'>
           <h1 className='card-title'>{fullName}</h1>
           <div className='status-container'>
-            <p className='card-text'>{status}</p>
+            <p className='card-text' title={`${status}`}>
+              {status.length > 30 ? status.substring(0, 27)+'...' : status}</p>
           </div>
         </div>
 
