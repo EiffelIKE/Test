@@ -1,28 +1,31 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
+import {useSelector, useDispatch} from 'react-redux'
 import Card from './Card'
+import {setId} from '../store/detailSlice/detailSlice'
 import './styles/Friend.css'
 
-const Friends = ({friend}) => {
+const Friends = () => {
   const navigate = useNavigate()
+  const {list} = useSelector((state)=>state.friend)
+  const dispatch = useDispatch()
+
   const handleClick = (e) =>{
     const friendId = e.target.dataset.id
-    console.log(friendId)
+    dispatch(setId(friendId))
     e.preventDefault()
     navigate('./Details')
   }
 
   return (
     <div className='Friends-List'>
-      {friend.map((friend)=>{
+      {list.map((friend)=>{
         return (
           <Card
             key={friend.id}
-            img = {friend.img}
-            fullName = {friend.first_name + ' ' + friend.last_name}
-            {...friend}
             handleClick={handleClick}
             id ={friend.id}
+            {...friend}
           />)
       }
       )}

@@ -5,11 +5,11 @@ import './styles/FriendsContainer.css'
 import './styles/Title.css'
 
 
-const FriendsContainer = ({friend}) => {
+const FriendsContainer = () => {
   return (
     <div className='Friends-Container'>
       <Tittle/>
-      <Friends friend = {friend}/>
+      <Friends />
     </div>
   )
 }

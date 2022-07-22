@@ -2,7 +2,7 @@ import React from 'react'
 import './styles/Card.css'
 import friendimg from './styles/img.png'
 
-const Card = ({img, fullName, status, available, handleClick, id}) => {
+const Card = ({handleClick, id, ...friend}) => {
   const styleAvailable = {
     case1: {background: '#16BA44', border: '2px solid #FFFFFF'},
     case0: {background: '#B1B9DB', border: '2px solid #F4F6FE'}
@@ -12,15 +12,18 @@ const Card = ({img, fullName, status, available, handleClick, id}) => {
       <div className='card-body row'>
         <div className='col-2'>
           <div className='available'
-            style={ available ? styleAvailable.case1 : styleAvailable.case0 }/>
+            style={
+              friend.available ? styleAvailable.case1 : styleAvailable.case0
+            }/>
           <img src={friendimg } alt='Friend Picture'/>
         </div>
 
         <div className='col-7'>
-          <h1 className='card-title'>{fullName}</h1>
+          <h1 className='card-title'>{friend.first_name} {friend.last_name}</h1>
           <div className='status-container'>
-            <p className='card-text' title={`${status}`}>
-              {status.length > 30 ? status.substring(0, 27)+'...' : status}</p>
+            <p className='card-text' title={`${friend.status}`}>
+              {friend.status.length > 30 ?
+              friend.status.substring(0, 27)+'...' : friend.status}</p>
           </div>
         </div>
 
